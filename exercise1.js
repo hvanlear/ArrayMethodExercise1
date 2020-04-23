@@ -1,6 +1,7 @@
 //FOR EACH +++++++++++++++++++
 //doubleValues
-
+//Write a function called doubleValues which accepts an array and returns a new array with all
+//the values in the array passed to the function doubled
 let doubleValues = (arr) => {
   let newArr = [];
   arr.forEach((element) => {
@@ -10,7 +11,8 @@ let doubleValues = (arr) => {
 };
 
 //only Even Values
-
+//Write a function called onlyEvenValues which accepts an array and returns a new
+//array with only the even values in the array passed to the function
 let onlyEvenValues = (arr) => {
   let newArr = [];
   arr.forEach((element) => {
@@ -22,6 +24,8 @@ let onlyEvenValues = (arr) => {
 };
 
 //show First and Last
+//Write a function called showFirstAndLast which accepts an array of strings
+//and returns a new array with only the first and last character of each string.
 
 let showFirstAndLast = (arr) => {
   let newArr = [];
@@ -32,6 +36,8 @@ let showFirstAndLast = (arr) => {
 };
 
 ///addKeyandValue
+//Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and returns the array
+//passed to the function with the new key and value added for each object
 let addKeyAndValue = (arr, newKey, newValue) => {
   arr.forEach((element) => {
     element[newKey] = newValue;
@@ -40,6 +46,10 @@ let addKeyAndValue = (arr, newKey, newValue) => {
 };
 
 ///vowelCount
+
+//Write a function called vowelCount which accepts a string and returns an object with the keys as the vowel and the values
+//as the number of times the vowel appears in the string. This function should
+//be case insensitive so a lowercase letter and uppercase letter should count
 function vowelCount(str) {
   let splitArr = str.split("");
   let obj = {};
