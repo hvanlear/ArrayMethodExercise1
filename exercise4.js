@@ -28,5 +28,22 @@ function vowelCount(str) {
 }
 
 function addKeyAndValue(arr, key, value) {
-  return arr.reduce(function (acc, next) {}), [];
+  return arr.reduce(function (acc, next, idx) {
+    acc[idx][key] = value;
+    return acc;
+  }, arr);
+}
+
+function partition(arr, cb) {
+  return arr.reduce(
+    function (acc, next) {
+      if (cb(next)) {
+        acc[0].push(next);
+      } else {
+        acc[1].push(next);
+      }
+      return acc;
+    },
+    [[], []]
+  );
 }
